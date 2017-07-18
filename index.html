@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>UofL Club Baseball </title>
+    </head>
+    <header>
+        <nav>
+            <ul>
+            <li class="brand">UofL Club Baseball </li>
+            <a href="index.html"><li>Home</li></a>
+            <a href="schedule.html"><li>Schedule</li></a>
+            <a href="roster.html"><li>Roster</li></a>
+            <a href="stats.html"><li>Stats</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div id="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/638x444.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/Baseball.jpg" style="width: 100%">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="img/clubbaseball.png">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div id="aboutus">
+            <h1> Come Join Us! </h1>
+            <p class="program"> We are the University of Louisville Club Baseball team. We have currently been a club
+                for the past 7 years. <br>  We are still continuing to build our program by adding players, getting
+                new uniforms, and playing against other clubs all over the region. <br> If you are interested in joining us,
+                <a href="#" id="contactlink">Click Here! </a>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i=0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active","");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1} 
+            slides[slideIndex-1].style.display = "block"; 
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+    </body>
+
+    <footer>
+         <div class="social-icons">
+            <p>Phone Number: (703)-965-7138 </p>
+            <p>Email: anpicc01@louisville.edu </p>
+            <p> Address: 1 Rochester Drive, Louisville, KY 40245 </p>
+        </div>
+        <div id="google-map">
+            <iframe class="map" width="100%" height="150" frameborder="0" style="border:0"
+             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJXfnLgPENaYgRmPcBX63la9s&key=AIzaSyA0byBEuEf4Y-YtiJrX5CQYCPavgviiqNk" allowfullscreen></iframe>
+        </div>
+    </footer>
+</html>
