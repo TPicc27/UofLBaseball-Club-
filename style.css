@@ -32,9 +32,6 @@
       cursor: pointer;
   }
 
-  span {
-      color: #54D17A;
-  }
 
   label {
       margin: 0 40px 0 0;
@@ -141,13 +138,20 @@ body {
 #aboutus {
     text-align: center;
     padding-top: 40px;
-
+    padding-bottom: 40px;
+    border-bottom: solid red;
 }
 
+.header {
+    text-decoration: underline;
+}
+
+.program {
+    text-decoration: none;
+}
 
 footer {
-    width: 100%;
-    background-color: black;
+    width: 100%;;
     height: auto;
 }
 
@@ -177,10 +181,11 @@ ul.share-buttons .sr-only{
 }
 
 .social-icons p{
-    color: white;
+    color: black;
     text-align: center;
-    margin-bottom: 20px;
     font-size: 14px;
+    margin-bottom: -10px;
+    font-weight: bold;
 }
 
 footer nav ul {
@@ -236,6 +241,19 @@ footer nav ul li {
 
   #aboutus {
      text-align: left;
+  }
+
+  .header {
+      font-size: 22px;
+  }
+
+  .program {
+      font-size: 12px;
+  }
+
+  .social-icons p {
+      text-align: left;
+
   }
 
 }
