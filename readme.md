@@ -4,5 +4,5 @@ My website is about my University of Louisville Club Baseball team. I want to be
 
 Viewing:
 ----------
-You can open index.html file in your browser. As well as the schedule.html, roster.html, stats.html, and contact.html.  Once a html file is open you can easily maneuver through the site by clicking on one of the menu options.
+Double click to open index.html file in your browser. As well as the schedule.html, roster.html, stats.html, and contact.html.  Once a html file is open you can easily maneuver through the site by clicking on one of the menu options.
 
