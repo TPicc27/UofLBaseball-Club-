@@ -211,6 +211,7 @@ ul.share-buttons .sr-only{
 @media (max-width: 800px) {
      .social-icons p {
       font-size: 12px;
+      display: block;
   }
 
   #homepage {

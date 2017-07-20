@@ -1,5 +1,5 @@
 //Form Validation
-function Validate() {
+function Validation() {
 //Get value from each input variable
 var name = document.forms["vform"]["name"].value;
 var email = document.forms["vform"]["email"].value;
