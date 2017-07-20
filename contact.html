@@ -1,15 +1,21 @@
+<!DOCTYPE html>
 <html>
     <head>
+     <!--CSS links-->
+        <script rel="text/javascript" src="contactform.js"></script>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Favicon on tab--> 
         <link rel="shortcut icon" href="img/favicon.ico">
+         <!--Title-->
         <title>UofL Club Baseball </title>
     </head>
     <body>
+    <!--Navbar-->
     <header>
         <div class="nav">
-            <label for="toggle">&#9776;</label>
+            <label class="toggle" for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle"/>
             <div class="menu">
                 <a href="index.html">Home</a>
@@ -19,15 +25,42 @@
                 <a href="contact.html">Contact</a>
             </div>
     </header>
-        <form id="contact-form">
+    <!--End of Navbar-->
+
+    <!--Contact Form-->
+     <form id="contact-form" method="POST" action="contact.html" onsubmit="Validate()" name="vform">
             <div class="wrapper">
                 <h2>Contact Form</h2>
                 <p>We will try to contact you within 24 hours</p>
-                <input type="text" name="" id="" placeholder="Full Name">   
-                <input type="text" name="" id="" placeholder="Email">   
-                <input type="text" name="" id="" placeholder="Phone Number">    
-                <textarea name="" id="" cols="30" rows="18" placeholder="Message"></textarea>
-                <input type="button" class="button" value="Submit">
+                <input type="text"  id="name" name="name" placeholder="Full Name">   
+                <div id="name_error" class="val_error"></div>
+                <input type="text"  name="email" id="email" placeholder="Email">  
+                <div id="email_error" class="val_error"></div> 
+                <input type="text"  name="phone" id="phone" placeholder="Phone Number"> 
+                <div id="phone_error" class="val_error"></div>   
+                <textarea  id="message" cols="30" rows="18" placeholder="Message"></textarea>
+                <div>
+                <button type="submit" id="button">Submit</button>
+                </div>
             </div>
-        </form>
+         </form>
+    <!--End of Contact Form-->
+
+    <!--Footer-->
+         <footer>
+         <div class="social-icons">
+            <p>Phone Number: (703)-965-7138 </p>
+            <p>Email: anpicc01@louisville.edu </p>
+            <p>Address: 1 Rochester Drive, Louisville, KY 40245 </p>
+        </div>
+        <div id="google-map">
+            <iframe class="map" width="100%" height="125" frameborder="0" style="border:0"
+             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJXfnLgPENaYgRmPcBX63la9s&key=AIzaSyA0byBEuEf4Y-YtiJrX5CQYCPavgviiqNk" allowfullscreen></iframe>
+            <ul class="share-buttons">
+            <li><a href="https://twitter.com/ulclubbaseball?lang=en" target="_blank" title="Tweet"><img alt="Tweet" src="img/inverted/Twitter.png" /></a></li>
+            <li><a href="https://www.facebook.com/Louisville-Baseball-Club-109335932462188/" target="_blank" title="Facebook"><img alt="Facebook" src="img/inverted/Facebook.png"/></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--Footer-->
     </body>
