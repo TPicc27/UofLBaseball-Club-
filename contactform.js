@@ -6,16 +6,16 @@ var email = document.forms["vform"]["email"].value;
 var phone = document.forms["vform"]["phone"].value;
 
 //If input values are not entered 
-if(name == null || name == "" || email == null || email == "" || phone == null || phone == "")
+if(name == "" || email == "" || phone == "")
     {
         //Alert pop up message
         alert("Please fill out your name, email, and phone");
     }
     //If input is entered
     else {
-        if(name != null){
-            if(email != null){
-                if(phone != null) {
+        if(name != ""){
+            if(email != ""){
+                if(phone != "") {
                     //Alert Pop up message
                     alert("Form was submitted");
                 }
