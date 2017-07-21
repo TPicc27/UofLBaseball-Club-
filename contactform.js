@@ -9,7 +9,7 @@ var phone = document.forms["vform"]["phone"].value;
 if(name == "" && email == "" && phone == "")
     {
         //Alert pop up message
-        alert("Please fill out your name, email, and phone");
+        alert("Please fill out your name, email, and phone number");
     }
     //If input is not entered
     else if(name != "" && email == "" && phone == "")
