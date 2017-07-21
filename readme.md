@@ -1,6 +1,6 @@
 Overview:
 -------------
-My website is about my University of Louisville Club Baseball team. I want to be able to show what my team is all about, how you can contact or connect to us, have information about each player, stats on how they are doing in that current season. I also have a schedule so that people can come and watch us play. Added some Javascript for the Contact.html to be able to tell the user if their form has been submitted or not and to make an automated image slideshow.
+My website is about my University of Louisville Club Baseball team. I want to be able to show what my team is all about, how you can contact or connect to us, have information about each player, stats on how they are doing in that current season. I also have a schedule so that people can come and watch us play. Added some Javascript for the Contact.html to be able to tell the user if their form has been submitted or not and I made an automated image slideshow of my club.
 
 Viewing:
 ----------
